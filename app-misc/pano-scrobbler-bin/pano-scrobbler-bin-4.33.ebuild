@@ -6,8 +6,8 @@ MY_PV="${PV//.}"
 DESCRIPTION="Feature packed cross-platform music tracker (binary)"
 HOMEPAGE="https://github.com/kawaiiDango/pano-scrobbler"
 SRC_URI="
-	amd64? ( https://github.com/kawaiiDango/pano-scrobbler/releases/download/${MY_PV}/pano-scrobbler-linux-x64.tar.gz )
-	arm64? ( https://github.com/kawaiiDango/pano-scrobbler/releases/download/${MY_PV}/pano-scrobbler-linux-arm64.tar.gz )
+	amd64? ( https://github.com/kawaiiDango/pano-scrobbler/releases/download/${MY_PV}/pano-scrobbler-linux-x64.tar.gz -> pano-scrobbler-linux-x64-${PV}.tar.gz )
+	arm64? ( https://github.com/kawaiiDango/pano-scrobbler/releases/download/${MY_PV}/pano-scrobbler-linux-arm64.tar.gz -> pano-scrobbler-linux-arm64-${PV}.tar.gz )
 "
 LICENSE="GPL-3.0-or-later"
 SLOT="0"
