@@ -27,8 +27,9 @@ src_prepare() {
     # Patch desktop entry
     sed -i 's/^Name=.*/Name=Pano Scrobbler (bin)/' "${WORKDIR}/pano-scrobbler.desktop"
     sed -i 's/^Exec=.*/Exec=\/usr\/bin\/pano-scrobbler-bin %U/' "${WORKDIR}/pano-scrobbler.desktop"
-    sed -i 's/^Icon=.*/Icon=pano-scrobbler/' "${WORKDIR}/pano-scrobbler.desktop"
+    sed -i 's/^Icon=.*/Icon=pano-scrobbler-bin/' "${WORKDIR}/pano-scrobbler.desktop"
     mv "${WORKDIR}/pano-scrobbler.desktop" "${WORKDIR}/pano-scrobbler-bin.desktop"
+    mv "${WORKDIR}/pano-scrobbler.svg" "${WORKDIR}/pano-scrobbler-bin.svg"
 }
 
 src_install() {
@@ -46,5 +47,5 @@ src_install() {
     # Desktop
     domenu "${WORKDIR}/pano-scrobbler-bin.desktop"
     # Icon
-    doicon "${WORKDIR}/pano-scrobbler.svg"
+    doicon "${WORKDIR}/pano-scrobbler-bin.svg"
 }
