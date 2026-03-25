@@ -1,0 +1,14 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=Feature packed cross-platform music tracker (binary)
+EAPI=8
+HOMEPAGE=https://github.com/kawaiiDango/pano-scrobbler
+INHERIT=desktop
+IUSE=+login
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3.0-or-later
+RDEPEND=login? ( net-libs/webkit-gtk:4.1/0 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/kawaiiDango/pano-scrobbler/releases/download/432/pano-scrobbler-linux-x64.tar.gz ) arm64? ( https://github.com/kawaiiDango/pano-scrobbler/releases/download/432/pano-scrobbler-linux-arm64.tar.gz )
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc
+_md5_=7fcbf9a4b189fdd277fa3da7ccb28001
