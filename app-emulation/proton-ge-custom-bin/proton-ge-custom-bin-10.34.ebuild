@@ -23,7 +23,6 @@ src_prepare() {
 
 src_install() {
     insinto "${DESTDIR}/${PROTON_DIR}"
+    insopts -m755
     doins -r "${WORKDIR}/GE-Proton${MY_PV}"/*
-    fperms +x "${DESTDIR}/${PROTON_DIR}/proton"
-    fperms +x "${DESTDIR}/${PROTON_DIR}/files/bin"*/*
 }
