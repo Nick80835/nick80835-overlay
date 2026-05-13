@@ -17,7 +17,7 @@ IUSE="+login"
 DEPEND=""
 RDEPEND="
     ${DEPEND}
-    login? ( net-libs/webkit-gtk:4.1/0 )
+    login? ( net-libs/webkit-gtk:6/0 )
 "
 BDEPEND=""
 S="${WORKDIR}"
